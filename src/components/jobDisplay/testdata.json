@@ -1,0 +1,10 @@
+{
+    "title":"SDE Intern",
+    "company":"Amazon",
+    "location":"Seattle, WA; Los Angels, CA; New York, NY",
+    "date":"2021-11-26",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis, ipsum sit amet auctor pellentesque, orci risus pretium est, a aliquet neque mauris sed urna. Integer sodales sollicitudin sollicitudin. Ut cursus eu purus vitae vestibulum. Maecenas semper augue vitae fringilla semper. Nam ut blandit risus. Quisque sagittis a arcu in porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque scelerisque tortor quis lacus cursus finibus.In finibus blandit fringilla. Sed ut velit cursus sem maximus tincidunt nec sed dui. Mauris condimentum justo eu maximus lobortis. Nullam euismod accumsan malesuada. Proin cursus nibh eu faucibus tristique. Curabitur quis facilisis urna, sit amet tempor justo. Vestibulum finibus ligula nec fringilla bibendum. Pellentesque pharetra scelerisque egestas. Suspendisse consectetur in arcu at ornare. Nam interdum vel nibh non congue. Etiam condimentum hendrerit tempus. Ut sed tristique nunc. Proin nec urna bibendum, lacinia lectus scelerisque, faucibus ipsum. Praesent blandit efficitur magna, vel fringilla ex dictum a. Suspendisse sed lacinia orci. Aenean iaculis, dolor quis cursus eleifend, nulla lacus tempor est, volutpat facilisis sapien eros vel lorem.",
+    "email":"testdata@fullstack.com",
+    "weblink":"",
+    "isFav":true
+}

@@ -1,0 +1,13 @@
+.card {
+    width: 18rem;
+}
+
+.card-title {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.card-text {
+    font-size: medium;
+    margin-bottom: 0;
+}
