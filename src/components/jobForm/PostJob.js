@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default (props) => {
-
   const [jobData, setJobData] = useState({
     job: '',
     user: '',
@@ -23,12 +22,9 @@ export default (props) => {
           user: response.data
         })
         console.log(response)
-
       })
       .catch(error => {
         console.log(error)
-        alert("get user fail")
-
       });
 
   }, []);
@@ -40,7 +36,6 @@ export default (props) => {
           <h3>Post A New Job</h3>
           <div className="form-group">
             <label for="inputTitle" className="col-sm-2 control-label">Job Title
-              {/* <span class="material-icons">star_rate</span> */}
             </label>
             <div class="col-sm-10">
               <input type="text" className="form-control" id="inputTitle" placeholder="Job Title" value={jobData.job} onChange={(e) => {
@@ -126,17 +121,11 @@ export default (props) => {
                   axios.post('/api/jobs/create', jobData)
                     .then(response => {
                       console.log(response)
-                      // alert(response.request.responseURL)
                       window.location.href = '/';
                     })
                     .catch(error => {
                       console.log(error)
-                      alert("create job fail")
-
                     });
-                  // window.location.href = document.referrer;
-                  // window.history.go(-1);
-
                 }}
 
               >Submit</button>
@@ -147,21 +136,6 @@ export default (props) => {
               </Link>
             </div>
           </div>
-          {/* <div className="mb-3 row">
-              <div className="col-sm-offset-2 col-sm-2">
-                <button type="button" className={favButtonName} >{favContent}</button>
-              </div>
-              <div className="col-sm-offset-2 col-sm-2">
-                <button type="button" className="btn btn-info btn-lg" >Edit</button>
-              </div>
-            </div> */}
-          {/* <div className="form-group">
-              <div className="col-sm-offset-2 col-sm-10">
-                <Link to='/'>
-                  <button type="button" className="btn btn-default btn-lg" >Cancel</button>
-                </Link>
-              </div>
-            </div> */}
         </form>
       </div>
     </div>

@@ -12,4 +12,4 @@ exports.FavoriteSchema = new Schema({
 
 }, {
     collection: 'favorites'
-})
+});

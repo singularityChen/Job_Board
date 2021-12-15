@@ -3,15 +3,12 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import CryptoJs from 'crypto-js';
 
-
 export default (props) => {
-
     const [userData, setUserData] = useState({
         password: '',
         password2: '',
         username: '',
     });
-
 
     return (
         <div>
@@ -54,22 +51,21 @@ export default (props) => {
                     <button className="btn btn-dark btn-lg btn-block"
                         onClick={() => {
                             axios.post('/api/users', userData)
-                                .then(response => {console.log(response)
-                                    // alert(response.request.responseURL)
-                                    alert(userData.password)
-                                    // window.location.href = '/';
+                                .then(response => {
+                                    console.log(response)
+                                    window.location.href = '/sign-in';
                                 })
-                                .catch(error => {console.log(error)
-                                    alert("register fail")
-
+                                .catch(error => {
+                                    console.log(error)
+                                    alert("The user has existed!")
                                 });
                         }}
-                    >Register New User</button>
-
+                    >Sign Up</button>
+                    <p className="creat-account text-right">
+                        Already have an account? <a href="/sign-in">Sign in now</a>
+                    </p>
                 </div>
             </div>
         </div >
     );
-
-
 }

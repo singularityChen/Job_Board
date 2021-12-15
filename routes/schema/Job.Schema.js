@@ -8,7 +8,10 @@ exports.JobSchema = new Schema({
     description: String,
     email: String,
     website: String,
-    birthday: String,
+    birthday: {
+        type: Date,
+        default: Date.now,
+    },
 
 
 }, { collection: 'jobs' });

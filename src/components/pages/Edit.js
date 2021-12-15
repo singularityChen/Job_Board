@@ -5,7 +5,6 @@ export default function Edit() {
   return (
     <>
       <EditJob className='postjob' />
-      
     </>
   );
 }

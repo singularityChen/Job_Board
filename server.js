@@ -1,5 +1,4 @@
 const express = require('express');
-const pokemon = require('./routes/pokemon.js');
 const users = require('./routes/user.js');
 const jobs = require('./routes/job.js');
 const favorites = require('./routes/favorite.js')
@@ -35,7 +34,6 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/pokemon', pokemon);
 app.use('/api/users', users);
 app.use('/api/jobs', jobs);
 app.use('/api/favorites', favorites);

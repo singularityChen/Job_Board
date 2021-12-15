@@ -36,7 +36,6 @@ function editFav(jobid, job, company, location, description, email, website) {
         {
             $set: {
                 job: job,
-
                 company: company,
                 location: location,
                 description: description,
